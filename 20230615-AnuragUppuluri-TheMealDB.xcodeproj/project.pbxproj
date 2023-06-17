@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A276D98B2A3BBBC100492B31 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D98A2A3BBBC100492B31 /* AppDelegate.swift */; };
 		A276D98D2A3BBBC100492B31 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D98C2A3BBBC100492B31 /* SceneDelegate.swift */; };
-		A276D98F2A3BBBC100492B31 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D98E2A3BBBC100492B31 /* ViewController.swift */; };
+		A276D98F2A3BBBC100492B31 /* TMDBDessertsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D98E2A3BBBC100492B31 /* TMDBDessertsViewController.swift */; };
 		A276D9922A3BBBC100492B31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A276D9902A3BBBC100492B31 /* Main.storyboard */; };
 		A276D9952A3BBBC100492B31 /* _0230615_AnuragUppuluri_TheMealDB.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A276D9932A3BBBC100492B31 /* _0230615_AnuragUppuluri_TheMealDB.xcdatamodeld */; };
 		A276D9972A3BBBCD00492B31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A276D9962A3BBBCD00492B31 /* Assets.xcassets */; };
@@ -17,6 +17,11 @@
 		A276D9A52A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D9A42A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBTests.swift */; };
 		A276D9AF2A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D9AE2A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBUITests.swift */; };
 		A276D9B12A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D9B02A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBUITestsLaunchTests.swift */; };
+		A276D9C82A3BBE2E00492B31 /* TMDBConstantsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D9C72A3BBE2E00492B31 /* TMDBConstantsManager.swift */; };
+		A276D9CA2A3BBE5900492B31 /* TMDBNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D9C92A3BBE5900492B31 /* TMDBNetworkManager.swift */; };
+		A276D9CC2A3BBECD00492B31 /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D9CB2A3BBECD00492B31 /* TMDBAPIManager.swift */; };
+		A293C3F32A3CFA1800739304 /* TMDBDessertsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3F22A3CFA1800739304 /* TMDBDessertsDataModel.swift */; };
+		A293C3F52A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3F42A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +45,7 @@
 		A276D9872A3BBBC100492B31 /* 20230615-AnuragUppuluri-TheMealDB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "20230615-AnuragUppuluri-TheMealDB.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D98A2A3BBBC100492B31 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A276D98C2A3BBBC100492B31 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A276D98E2A3BBBC100492B31 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A276D98E2A3BBBC100492B31 /* TMDBDessertsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertsViewController.swift; sourceTree = "<group>"; };
 		A276D9912A3BBBC100492B31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A276D9942A3BBBC100492B31 /* _0230615_AnuragUppuluri_TheMealDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = _0230615_AnuragUppuluri_TheMealDB.xcdatamodel; sourceTree = "<group>"; };
 		A276D9962A3BBBCD00492B31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -51,6 +56,12 @@
 		A276D9AA2A3BBBCE00492B31 /* 20230615-AnuragUppuluri-TheMealDBUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "20230615-AnuragUppuluri-TheMealDBUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A276D9AE2A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0230615_AnuragUppuluri_TheMealDBUITests.swift; sourceTree = "<group>"; };
 		A276D9B02A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = _0230615_AnuragUppuluri_TheMealDBUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A276D9C52A3BBD5700492B31 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A276D9C72A3BBE2E00492B31 /* TMDBConstantsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBConstantsManager.swift; sourceTree = "<group>"; };
+		A276D9C92A3BBE5900492B31 /* TMDBNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBNetworkManager.swift; sourceTree = "<group>"; };
+		A276D9CB2A3BBECD00492B31 /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
+		A293C3F22A3CFA1800739304 /* TMDBDessertsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertsDataModel.swift; sourceTree = "<group>"; };
+		A293C3F42A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertDetailsDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,14 +112,15 @@
 		A276D9892A3BBBC100492B31 /* 20230615-AnuragUppuluri-TheMealDB */ = {
 			isa = PBXGroup;
 			children = (
-				A276D98A2A3BBBC100492B31 /* AppDelegate.swift */,
-				A276D98C2A3BBBC100492B31 /* SceneDelegate.swift */,
-				A276D98E2A3BBBC100492B31 /* ViewController.swift */,
-				A276D9902A3BBBC100492B31 /* Main.storyboard */,
+				A276D9C42A3BBD1600492B31 /* Model */,
+				A276D9C32A3BBCFA00492B31 /* Utilities */,
+				A276D9C22A3BBCD000492B31 /* ViewModel */,
+				A276D9BE2A3BBC8300492B31 /* View */,
+				A276D9BD2A3BBC6000492B31 /* Application */,
 				A276D9962A3BBBCD00492B31 /* Assets.xcassets */,
-				A276D9982A3BBBCD00492B31 /* LaunchScreen.storyboard */,
 				A276D99B2A3BBBCD00492B31 /* Info.plist */,
 				A276D9932A3BBBC100492B31 /* _0230615_AnuragUppuluri_TheMealDB.xcdatamodeld */,
+				A276D9C52A3BBD5700492B31 /* README.md */,
 			);
 			path = "20230615-AnuragUppuluri-TheMealDB";
 			sourceTree = "<group>";
@@ -128,6 +140,83 @@
 				A276D9B02A3BBBCE00492B31 /* _0230615_AnuragUppuluri_TheMealDBUITestsLaunchTests.swift */,
 			);
 			path = "20230615-AnuragUppuluri-TheMealDBUITests";
+			sourceTree = "<group>";
+		};
+		A276D9BD2A3BBC6000492B31 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A276D98A2A3BBBC100492B31 /* AppDelegate.swift */,
+				A276D98C2A3BBBC100492B31 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		A276D9BE2A3BBC8300492B31 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A276D9C12A3BBCB200492B31 /* UI */,
+				A276D9C02A3BBCAA00492B31 /* Cell */,
+				A276D9BF2A3BBC8B00492B31 /* ViewController */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A276D9BF2A3BBC8B00492B31 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				A276D98E2A3BBBC100492B31 /* TMDBDessertsViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		A276D9C02A3BBCAA00492B31 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		A276D9C12A3BBCB200492B31 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A276D9982A3BBBCD00492B31 /* LaunchScreen.storyboard */,
+				A276D9902A3BBBC100492B31 /* Main.storyboard */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		A276D9C22A3BBCD000492B31 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A276D9C32A3BBCFA00492B31 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				A276D9C62A3BBDF500492B31 /* TMDBNetworking */,
+				A276D9C72A3BBE2E00492B31 /* TMDBConstantsManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		A276D9C42A3BBD1600492B31 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A293C3F22A3CFA1800739304 /* TMDBDessertsDataModel.swift */,
+				A293C3F42A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A276D9C62A3BBDF500492B31 /* TMDBNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				A276D9C92A3BBE5900492B31 /* TMDBNetworkManager.swift */,
+				A276D9CB2A3BBECD00492B31 /* TMDBAPIManager.swift */,
+			);
+			path = TMDBNetworking;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +350,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A276D98F2A3BBBC100492B31 /* ViewController.swift in Sources */,
+				A293C3F52A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift in Sources */,
+				A276D98F2A3BBBC100492B31 /* TMDBDessertsViewController.swift in Sources */,
+				A293C3F32A3CFA1800739304 /* TMDBDessertsDataModel.swift in Sources */,
 				A276D98B2A3BBBC100492B31 /* AppDelegate.swift in Sources */,
 				A276D9952A3BBBC100492B31 /* _0230615_AnuragUppuluri_TheMealDB.xcdatamodeld in Sources */,
 				A276D98D2A3BBBC100492B31 /* SceneDelegate.swift in Sources */,
+				A276D9C82A3BBE2E00492B31 /* TMDBConstantsManager.swift in Sources */,
+				A276D9CC2A3BBECD00492B31 /* TMDBAPIManager.swift in Sources */,
+				A276D9CA2A3BBE5900492B31 /* TMDBNetworkManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -444,6 +538,8 @@
 				DEVELOPMENT_TEAM = HFHLPZ8VZS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "20230615-AnuragUppuluri-TheMealDB/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TheMealDB;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -472,6 +568,8 @@
 				DEVELOPMENT_TEAM = HFHLPZ8VZS;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "20230615-AnuragUppuluri-TheMealDB/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = TheMealDB;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.food-and-drink";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
