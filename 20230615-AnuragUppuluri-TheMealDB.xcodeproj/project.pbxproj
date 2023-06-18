@@ -22,6 +22,9 @@
 		A276D9CC2A3BBECD00492B31 /* TMDBAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A276D9CB2A3BBECD00492B31 /* TMDBAPIManager.swift */; };
 		A293C3F32A3CFA1800739304 /* TMDBDessertsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3F22A3CFA1800739304 /* TMDBDessertsDataModel.swift */; };
 		A293C3F52A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3F42A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift */; };
+		A293C3F72A3F8A6B00739304 /* TMDBDessertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3F62A3F8A6B00739304 /* TMDBDessertsViewModel.swift */; };
+		A293C3F92A3F8CF600739304 /* TMDBDessertsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3F82A3F8CF600739304 /* TMDBDessertsTableViewCell.swift */; };
+		A293C3FB2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3FA2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 		A276D9CB2A3BBECD00492B31 /* TMDBAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBAPIManager.swift; sourceTree = "<group>"; };
 		A293C3F22A3CFA1800739304 /* TMDBDessertsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertsDataModel.swift; sourceTree = "<group>"; };
 		A293C3F42A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertDetailsDataModel.swift; sourceTree = "<group>"; };
+		A293C3F62A3F8A6B00739304 /* TMDBDessertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertsViewModel.swift; sourceTree = "<group>"; };
+		A293C3F82A3F8CF600739304 /* TMDBDessertsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertsTableViewCell.swift; sourceTree = "<group>"; };
+		A293C3FA2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				A276D98E2A3BBBC100492B31 /* TMDBDessertsViewController.swift */,
+				A293C3FA2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -172,6 +179,7 @@
 		A276D9C02A3BBCAA00492B31 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				A293C3F82A3F8CF600739304 /* TMDBDessertsTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -188,6 +196,7 @@
 		A276D9C22A3BBCD000492B31 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				A293C3F62A3F8A6B00739304 /* TMDBDessertsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -352,9 +361,12 @@
 			files = (
 				A293C3F52A3CFCE400739304 /* TMDBDessertDetailsDataModel.swift in Sources */,
 				A276D98F2A3BBBC100492B31 /* TMDBDessertsViewController.swift in Sources */,
+				A293C3F72A3F8A6B00739304 /* TMDBDessertsViewModel.swift in Sources */,
+				A293C3FB2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift in Sources */,
 				A293C3F32A3CFA1800739304 /* TMDBDessertsDataModel.swift in Sources */,
 				A276D98B2A3BBBC100492B31 /* AppDelegate.swift in Sources */,
 				A276D9952A3BBBC100492B31 /* _0230615_AnuragUppuluri_TheMealDB.xcdatamodeld in Sources */,
+				A293C3F92A3F8CF600739304 /* TMDBDessertsTableViewCell.swift in Sources */,
 				A276D98D2A3BBBC100492B31 /* SceneDelegate.swift in Sources */,
 				A276D9C82A3BBE2E00492B31 /* TMDBConstantsManager.swift in Sources */,
 				A276D9CC2A3BBECD00492B31 /* TMDBAPIManager.swift in Sources */,

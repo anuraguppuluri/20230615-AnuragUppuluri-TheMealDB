@@ -64,21 +64,21 @@ extension TMDBDessertsViewController {
         guard let cell = cell else {
             return UITableViewCell()
         }
-        if let name = vm.dessertsDataSource[row].schoolName {
+        if let name = vm.dessertsDataSource[row].strMeal {
             cell.nameLabel.text = name
         }
-        if let dbn = vm.dessertsDataSource[row].dbn {
-            cell.dbnLabel.text = dbn
+        if let id = vm.dessertsDataSource[row].idMeal {
+            cell.idLabel.text = id
         }
         return cell
     }
     
-    func segueTodessertDetails(row: Int) {
+    func segueToDessertDetails(row: Int) {
         let vc: TMDBDessertDetailsViewController? = storyboard?.instantiateViewController(withIdentifier: K.dessertDetailsViewID) as? TMDBDessertDetailsViewController
         guard let vc = vc else {
             return
         }
-        vc.vm.currentSchool = vm.dessertsDataSource[row]
+        //vc.vm.currentSchool = vm.dessertsDataSource[row]
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -86,3 +86,16 @@ extension TMDBDessertsViewController {
         dessertsTable.reloadData()
     }
 }
+
+extension UIImageView {
+    func downloadImageFrom(link: URL, contentMode: UIView.ContentMode, cacheID: Int) {
+        DispatchQueue.global().async {
+            URLSession.shared.dataTask(with: link) { data, response, error in
+                if let data {
+                    let imageFromData = UIImage(data: data)
+                }
+            }
+        }
+    }
+}
+

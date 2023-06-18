@@ -11,7 +11,7 @@
         <!--The Meal DB Desserts-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController title="The Meal DB Desserts" id="BYZ-38-t0r" customClass="TMDBDessertsViewController" customModule="_0230615_AnuragUppuluri_TheMealDB" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dessertsView" title="The Meal DB Desserts" id="BYZ-38-t0r" customClass="TMDBDessertsViewController" customModule="_0230615_AnuragUppuluri_TheMealDB" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="340" id="XRl-89-3oh">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="340" id="XRl-89-3oh" customClass="TMDBDessertsTableViewCell" customModule="_0230615_AnuragUppuluri_TheMealDB" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="340"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XRl-89-3oh" id="5f3-hi-wKP">
@@ -42,7 +42,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJh-Ti-F8k">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uJh-Ti-F8k">
                                                     <rect key="frame" x="81" y="11" width="292" height="42"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -62,6 +62,11 @@
                                                 </imageView>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="dessertImage" destination="tmM-ba-WYI" id="gXC-fR-GQs"/>
+                                            <outlet property="idLabel" destination="p6D-yC-kqb" id="B7E-vh-cQj"/>
+                                            <outlet property="nameLabel" destination="uJh-Ti-F8k" id="3yu-aE-1dz"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -82,7 +87,7 @@
         <!--Dessert Details-->
         <scene sceneID="cj3-6S-zfx">
             <objects>
-                <viewController title="Dessert Details" id="5vB-xk-gtl" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="dessertDetailsView" title="Dessert Details" id="5vB-xk-gtl" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xed-j9-R00">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
