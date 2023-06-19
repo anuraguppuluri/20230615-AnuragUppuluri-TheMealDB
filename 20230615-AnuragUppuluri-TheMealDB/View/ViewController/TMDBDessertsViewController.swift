@@ -69,16 +69,23 @@ extension TMDBDessertsViewController {
         }
         if let id = vm.dessertsDataSource[row].idMeal {
             cell.idLabel.text = id
+            cell.dessertImage.image = UIImage(named: "placeholder") // set placeholder image first
+            if let existingImage = imageCache.object(forKey: NSString(string: String(id))) {
+                cell.dessertImage.image = existingImage
+            }
+            else if let url = vm.dessertsDataSource[row].strMealThumb, let imageURL = URL(string: url) {
+                cell.dessertImage.downloadImageFrom(link: imageURL, contentMode: UIView.ContentMode.scaleAspectFit, cacheID: id)
+            }
         }
         return cell
     }
     
     func segueToDessertDetails(row: Int) {
         let vc: TMDBDessertDetailsViewController? = storyboard?.instantiateViewController(withIdentifier: K.dessertDetailsViewID) as? TMDBDessertDetailsViewController
-        guard let vc = vc else {
+        guard let vc = vc, let id = vm.dessertsDataSource[row].idMeal else {
             return
         }
-        //vc.vm.currentSchool = vm.dessertsDataSource[row]
+        vc.vm.currentDessertID = id
         navigationController?.pushViewController(vc, animated: true)
     }
     
@@ -88,13 +95,18 @@ extension TMDBDessertsViewController {
 }
 
 extension UIImageView {
-    func downloadImageFrom(link: URL, contentMode: UIView.ContentMode, cacheID: Int) {
+    func downloadImageFrom(link: URL, contentMode: UIView.ContentMode, cacheID: String) {
         DispatchQueue.global().async {
             URLSession.shared.dataTask(with: link) { data, response, error in
                 if let data {
                     let imageFromData = UIImage(data: data)
+                    imageCache.setObject(imageFromData!, forKey: NSString(string: cacheID))
+                    DispatchQueue.main.async {
+                        self.contentMode = contentMode
+                        self.image = imageFromData
+                    }
                 }
-            }
+            }.resume()
         }
     }
 }

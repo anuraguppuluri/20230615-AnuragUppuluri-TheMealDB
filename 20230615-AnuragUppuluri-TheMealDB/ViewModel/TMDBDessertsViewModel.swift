@@ -12,9 +12,10 @@ class TMDBDessertsViewModel {
     var dessertsDataSource: [Meal] = []
     
     func loadDataSource() {
-        TMDBAPIManager.shared.decodeDesserts(url: K.dessertsURL) { [self] success, desserts, error in
+        TMDBAPIManager.shared.decodeDesserts(urlString: K.dessertsURLString) { [self] success, desserts, error in
             if success, let desserts {
                 print(desserts)
+                print(desserts.count)
                 dessertsDataSource = desserts
                 DispatchQueue.main.async { [self] in
                     delegate?.reloadTable()

@@ -9,6 +9,9 @@ import UIKit
 import CoreData
 import AVFoundation
 
+var imageCache: NSCache<NSString, UIImage> = NSCache()
+var detailsCache: NSCache<NSString, Dessert> = NSCache()
+
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -16,6 +19,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        imageCache.totalCostLimit = 3216 // in KB
+        imageCache.countLimit = 16
+        detailsCache.countLimit = 16
         
         let audioSession = AVAudioSession.sharedInstance()
         do {

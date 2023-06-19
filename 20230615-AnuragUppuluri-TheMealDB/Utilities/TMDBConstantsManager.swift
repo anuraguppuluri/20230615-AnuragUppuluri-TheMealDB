@@ -9,12 +9,14 @@ import Foundation
 
 struct K
 {
-    static let dessertsURL = "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert"
-    static let dessertDetailsURL = "https://themealdb.com/api/json/v1/1/lookup.php?i=52767"
+    static let dessertsURLString = "https://themealdb.com/api/json/v1/1/filter.php?c=Dessert"
+    static let dessertDetailsURLString = "https://themealdb.com/api/json/v1/1/lookup.php?i="
     
     static let dessertsViewID = "dessertsView"
     static let dessertDetailsViewID = "dessertDetailsView"
     
     static let dessertsCellID = "dessertsCell"
-    static let dessertsCellHeight = 143
+    static let dessertsCellHeight = 379
+    
+    static let defaultDessertVideo = "https://youtu.be/ughsx-ar9No"
 }

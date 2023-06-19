@@ -18,8 +18,8 @@ class TMDBNetworkManager: NSObject {
         super.init()
     }
     
-    func getData(url: String, completionHandler: @escaping (Bool, Data?) -> ()) {
-        guard let url = URL(string: url) else {
+    func getData(urlString: String, completionHandler: @escaping (Bool, Data?) -> ()) {
+        guard let url = URL(string: urlString) else {
             print("Error: cannot create URL from string")
             completionHandler(false, nil)
             return
@@ -27,12 +27,12 @@ class TMDBNetworkManager: NSObject {
         let request = URLRequest(url: url)
         
         let dt = URLSession.shared.dataTask(with: request) { data, response, error in
-            if let error = error {
+            if let error {
                 print("Error hitting API with GET request:")
                 print(error.localizedDescription)
                 completionHandler(false, nil)
             }
-            guard let data = data else {
+            guard let data else {
                 print("Error: Did not recieve data from API")
                 completionHandler(false, nil)
                 return

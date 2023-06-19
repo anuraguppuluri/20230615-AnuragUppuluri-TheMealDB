@@ -17,8 +17,8 @@ class TMDBAPIManager: NSObject {
         super.init()
     }
     
-    func decodeDesserts(url: String, completionHandler: @escaping (_ success: Bool, _ results: [Meal]?, _ error: String?) -> ()) {
-        TMDBNetworkManager.shared.getData(url: url) { success, data in
+    func decodeDesserts(urlString: String, completionHandler: @escaping (_ success: Bool, _ results: [Meal]?, _ error: String?) -> ()) {
+        TMDBNetworkManager.shared.getData(urlString: urlString) { success, data in
             if success {
                 do {
                     let decoder = JSONDecoder()
@@ -35,8 +35,8 @@ class TMDBAPIManager: NSObject {
         }
     }
     
-    func decodeDessertDetails(url: String, completionHandler: @escaping (_ success: Bool, _ results: Dessert?, _ error: String?) -> ()) {
-        TMDBNetworkManager.shared.getData(url: url) { success, data in
+    func decodeDessertDetails(urlString: String, completionHandler: @escaping (_ success: Bool, _ results: Dessert?, _ error: String?) -> ()) {
+        TMDBNetworkManager.shared.getData(urlString: urlString) { success, data in
             if success {
                 do {
                     let decoder = JSONDecoder()

@@ -25,6 +25,7 @@
 		A293C3F72A3F8A6B00739304 /* TMDBDessertsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3F62A3F8A6B00739304 /* TMDBDessertsViewModel.swift */; };
 		A293C3F92A3F8CF600739304 /* TMDBDessertsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3F82A3F8CF600739304 /* TMDBDessertsTableViewCell.swift */; };
 		A293C3FB2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3FA2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift */; };
+		A293C3FD2A3FAD9200739304 /* TMDBDessertDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A293C3FC2A3FAD9200739304 /* TMDBDessertDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		A293C3F62A3F8A6B00739304 /* TMDBDessertsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertsViewModel.swift; sourceTree = "<group>"; };
 		A293C3F82A3F8CF600739304 /* TMDBDessertsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertsTableViewCell.swift; sourceTree = "<group>"; };
 		A293C3FA2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertDetailsViewController.swift; sourceTree = "<group>"; };
+		A293C3FC2A3FAD9200739304 /* TMDBDessertDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TMDBDessertDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -197,6 +199,7 @@
 			isa = PBXGroup;
 			children = (
 				A293C3F62A3F8A6B00739304 /* TMDBDessertsViewModel.swift */,
+				A293C3FC2A3FAD9200739304 /* TMDBDessertDetailsViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -364,6 +367,7 @@
 				A293C3F72A3F8A6B00739304 /* TMDBDessertsViewModel.swift in Sources */,
 				A293C3FB2A3F8F2300739304 /* TMDBDessertDetailsViewController.swift in Sources */,
 				A293C3F32A3CFA1800739304 /* TMDBDessertsDataModel.swift in Sources */,
+				A293C3FD2A3FAD9200739304 /* TMDBDessertDetailsViewModel.swift in Sources */,
 				A276D98B2A3BBBC100492B31 /* AppDelegate.swift in Sources */,
 				A276D9952A3BBBC100492B31 /* _0230615_AnuragUppuluri_TheMealDB.xcdatamodeld in Sources */,
 				A293C3F92A3F8CF600739304 /* TMDBDessertsTableViewCell.swift in Sources */,
