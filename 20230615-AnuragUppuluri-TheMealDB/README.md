@@ -25,3 +25,38 @@ Controls (cell etc, any custom view)
 View Controllers (DessertsViewController, DessertDetailsViewController)
 
 Submitted By Anurag Uppuluri on 6/18/2023
+
+
+
+
+Scott McReynolds <s.mcreynolds@fetchrewards.com>
+Wed, Jun 21, 9:06 AM (6 days ago)
+to me
+
+Anurag,
+
+Thanks you so much for applying to the iOS Software Engineer role. Unfortunately, we have decided not to proceed with your candidacy for the current opening at Fetch.
+
+We received many qualified applicants and have decided to move ahead with other candidates who we feel are a better match for this particular position. Here's some feedback: 
+
+What went well: 
+
+Uses MVVM
+
+What could have gone better: It would have been preferred to build the UI programmatically rather than storyboards . Building the UI programmatically gives better control over the UI and removes the potential of messy merge conflicts if multiple developers where on the project.In the dessert details screen, we should not be showing commas where empty ingredients/measurements are. Instead we should be filtering out the empty ingredients.The Dessert model could be improved by holding an array of the ingredients/measurements instead of a property for every single ingredient and measurement. This allows us to scale better if the backend response sends 20+ ingredients/measurements.Decoding the ingredients/measurements dynamically would have to be done using coding keys and the decoder initThe completion handlers for decodeDesserts and decodeDessertDetails funcs in TMDBAPIManager should complete using the Result type instead of a tuple with the data and error. This allows use to just pass in one property when calling the completion, either a .success or .failure, and is a cleaner approach. Further more, the two decode functions are very similar and could be replaced with one generic function.
+
+Thanks again for your interest in Fetch, and we wish you luck in your search.
+
+
+Regards,
+Fetch
+
+Anurag Uppuluri <anuraguppuluri2898@gmail.com>
+9:31 PM (9 minutes ago)
+to Scott
+
+Hi Scott,
+Thanks for such a detailed review! I really appreciate your feedback! It was refreshing and enlightening!
+Wish you have a great one and hope we cross paths again,
+Best,
+Anurag
